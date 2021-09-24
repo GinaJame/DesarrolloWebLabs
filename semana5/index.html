@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <title>Web con Javascript</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link type="text/css" rel="stylesheet" media="screen" href="estilos.css" />
+  </header>
+  <body>
+    <p>Ingrese el nombre de la persona:</p>
+
+    <script>
+      const pos_parrafo = document.querySelector("p");
+      pos_parrafo.addEventListener("click", updateNombre);
+      function updateNombre() {
+        let name = prompt("Ingrese el nombre de la persona:");
+        pos_parrafo.textContent = "Bienvenidx " + name;
+      }
+    </script>
+  </body>
+</html>
